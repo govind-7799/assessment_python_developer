@@ -1,0 +1,15 @@
+workflow of webscraping:
+The web scraper extracts  information such as Heading, subheadings, and codeblocks  from Python Packaging Docs.
+It uses BeautifulSoup for HTML parsing and requests for making HTTP requests.
+The script follows these steps:
+1. Fetches the HTML content of the Python Packaging Docs page.
+2. Parses the HTML content to extract relevant information using BeautifulSoup.
+3. Writes the extracted data to a CSV file.
+
+## Input and Output
+- Input: The script requires the URL of the Python Packaging Docs as input.
+- Output: The scraped data is saved to a CSV file specified by the user.
+
+## Error Handling
+- If the URL provided is invalid or the page structure changes, the script will raise an error and exit gracefully.
+- Detailed error messages are provided to assist with troubleshooting.
